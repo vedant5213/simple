@@ -17,7 +17,7 @@ http.createServer(function(request,response){
     response.writeHead(404,{"content-type":"text/html"})
     response.write('<h1> 404 page not found </h1>')
   }
-}).listen(function(){console.log("http://localhost:1000")})
+}).listen(function(){console.log("http://localhost:${port}")})
 
 let render = function(response,file){
   console.log(dir+file) 
